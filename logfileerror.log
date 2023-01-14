@@ -25,3 +25,6 @@ INFO:WDM:Get LATEST chromedriver version for google-chrome 109.0.5414
 INFO:WDM:There is no [win32] chromedriver for browser 109.0.5414 in cache
 INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
 INFO:WDM:Driver has been saved in cache [C:\Users\kianv\.wdm\drivers\chromedriver\win32\109.0.5414]
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome 109.0.5414
+INFO:WDM:Driver [C:\Users\kianv\.wdm\drivers\chromedriver\win32\109.0.5414\chromedriver.exe] found in cache

@@ -63,7 +63,7 @@ while k<103:
     k+=1
     #Append data collected from current window to our main df
     finaldf = finaldf.append(df)
-    finaldf.to_csv()
+    finaldf.to_csv('./data.csv')
 
 
 
