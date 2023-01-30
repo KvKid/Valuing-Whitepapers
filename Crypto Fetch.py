@@ -18,9 +18,9 @@ driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.maximize_window()
 driver.get("https://golden.com/query/p/WzE4LFtbNywwLCJleGlzdHMiLGZhbHNlLG51bGwsbnVsbF1dLGZhbHNlLFstMSwtMiw3LDU1LDQxLDQwXSxbXV0/")
 
-
 finaldf = pd.DataFrame({"Name":[], "Links":[]})
 k=1
+input()
 while k<103:
     print("GETTING DATA.")
     links = driver.find_elements(By.XPATH,"//a[@href]") # Get all elements that contain a link
@@ -58,12 +58,11 @@ while k<103:
     print(finaldf.tail(3))
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);") # scrolls to bottom
     print("CLICK ON NEXT PAGE NOW: " + str(k))
-    time.sleep(12)
+    time.sleep(15)
     
     k+=1
     #Append data collected from current window to our main df
     finaldf = finaldf.append(df)
-    finaldf.to_csv('./data.csv')
-
+    finaldf.to_csv()
 
 
